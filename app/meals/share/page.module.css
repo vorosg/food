@@ -61,7 +61,7 @@
   .row {
     display: flex;
     gap: 1rem;
-  }
+  } 
   
   .row p {
     width: 100%;
