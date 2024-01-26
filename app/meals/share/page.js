@@ -1,23 +1,10 @@
+'use client';
+
 import ImagePicker from '@/components/meals/image-picker';
 import classes from './page.module.css';
+import { shareMeal } from '@/lib/actions';
 
 export default function ShareMealPage() {
-
-  const shareMeal = async (formData) => {
-    'use server'; // creates a server action which guarantees to be executed on the server and only there
-                  // tied to function
-                  // just add async before function declaration and use the 'use server' directive inside the function
-    const meal = {
-      title: formData.get('title'), // gets value of the input field named 'title'
-      summary: formData.get('summary'),
-      instructions: formData.get('instructions'),
-      image: formData.get('image'),
-      creator: formData.get('name'),
-      creator_email: formData.get('email'),
-    }
-
-    console.log(meal);
-  }
 
   return (
     <>
