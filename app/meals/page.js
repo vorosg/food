@@ -9,6 +9,11 @@ const FetchMeals = async() => {
     return <MealsGrid meals={meals} />
 }
 
+export const metadata = {
+    title: 'All Meals',
+    description: 'Browse the delicious meals shared by our vibrant community.',
+};
+
 const Meals = () => {
     return (
         <>
